@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<import-steps>
+
+ 
+ <import-step 
+    id="Tripwire-Update-RoleMappings" 
+    handler="Products.Tripwire.setuphandlers.updateRoleMappings"
+    title="Update Workflow role mappings for Tripwire"
+    version="2008-09-13T23:44:34.368293">
+   <dependency step="Tripwire-QI-dependencies"/>
+   updates the workflow role mappings for Tripwire
+ </import-step>
+
+ <import-step 
+    id="Tripwire-postInstall" 
+    handler="Products.Tripwire.setuphandlers.postInstall"
+    title="manual coded post-install for Tripwire"
+    version="2008-09-13T23:44:34.368293">
+   <dependency step="Tripwire-QI-dependencies"/>
+   manual coded post-install for Tripwire
+ </import-step>
+
+<!-- ##code-section ADDITIONALSTEPS -->
+<!-- ##/code-section ADDITIONALSTEPS --> 
+
+</import-steps>
+ 

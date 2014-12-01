@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        request_varname="plone_skin">
+
+ <object name="tripwire_images"
+         meta_type="Filesystem Directory View"
+         directory="Tripwire/skins/tripwire_images"/>
+ <object name="tripwire_styles"
+         meta_type="Filesystem Directory View"
+         directory="Tripwire/skins/tripwire_styles"/>
+ <object name="tripwire_templates"
+         meta_type="Filesystem Directory View"
+         directory="Tripwire/skins/tripwire_templates"/>
+ 
+ <skin-path name="Plone Default">
+  <layer insert-after="custom" 
+         name="tripwire_images"/>
+  <layer insert-after="custom" 
+         name="tripwire_styles"/>
+  <layer insert-after="custom" 
+         name="tripwire_templates"/>
+ </skin-path>
+
+</object>
